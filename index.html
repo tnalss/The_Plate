@@ -2,129 +2,244 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the Plating : 혼밥족을 위한 플레이팅</title>
-    <link href="images/favicon.png" rel="shortcut icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>the Plating : 혼밥족을 위한 플레이팅</title>
+  <link href="images/favicon.png" rel="shortcut icon">
 
-    <!-- 부트스트랩 css cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/custom.css">
+  <!-- 부트스트랩 css cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css">
 
 <body>
-    <h1 class="d-none">더 플레이팅</h1>
-    <div class="container-fluid bg-greenbean text-white" id="banner">
-        <div class="container mx-auto d-flex justify-content-center align-items-center p-2">
-            <p class="banner-text mb-0">
-                지금 플레이팅 가입하고 최대 10만원 쿠폰 받으세요 &gt;</p>
-            <button type="button" class="border-0 bg-transparent text-white ml-auto" id="close_banner">
-                <i class="bi bi-x-lg"></i>
-            </button>
-        </div>
+  <h1 class="d-none">더 플레이팅</h1>
+  <div class="container-fluid bg-greenbean text-white" id="banner">
+    <div class="container mx-auto d-flex justify-content-center align-items-center p-2">
+      <p class="banner-text mb-0">
+        지금 플레이팅 가입하고 최대 10만원 쿠폰 받으세요 &gt;</p>
+      <button type="button" class="border-0 bg-transparent text-white ml-auto" id="close_banner">
+        <i class="bi bi-x-lg"></i>
+      </button>
     </div>
-    <header>
-        <div class="container mx-auto">
-            <div class="header_top" id="topNav">
-                <ul class="only-pc d-flex justify-content-end list-unstyled text-dark my-2">
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">고객센터</a></li>
-                </ul>
-            </div>
-            <div class="header-logo">
-                <div class="main-logo mx-auto">
-                    <img src="images/logo.svg" alt="로고">
-                </div>
-
-            </div>
+  </div>
+  <header>
+    <div class="container mx-auto">
+      <div class="header_top" id="topNav">
+        <ul class="only-pc d-flex justify-content-end list-unstyled text-dark my-2">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </div>
+      <div class="header-logo">
+        <div class="main-logo mx-auto">
+          <img src="images/logo.svg" alt="로고">
         </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-3">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link disaled"><i class="bi bi-list"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">그릇/홈세트 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                국내도자기그릇
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">접시</a>
+                <a class="dropdown-item" href="#">밥그릇</a>
+                <a class="dropdown-item" href="#">국그릇</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">기타</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                수입주방용품
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">프랑스</a>
+                <a class="dropdown-item" href="#">독일</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">기타 해외상품</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">기타주방용품</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="찾으시는 물품명" aria-label="Search">
+            <button class="btn border-0 my-2 my-sm-0 position-relative" style="left:-60px" type="submit">|&nbsp;&nbsp;<i
+                class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- carousel -->
+  <div class="container-fluid px-0">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/hero1.jpg" class="d-block w-100" alt="출석체크하고 스푼받자!">
+        </div>
+        <div class="carousel-item">
+          <img src="images/hero2.jpg" class="d-block w-100" alt="스테이크">
+        </div>
+        <div class="carousel-item">
+          <img src="images/hero3.jpg" class="d-block w-100" alt="파스타스타">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- carousel end -->
+
+  <section id="main">
+    <h2 class="d-none">the plate product lists</h2>
+      <article>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light p-3">
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">그릇/홈세트 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                          국내도자기그릇
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">접시</a>
-                          <a class="dropdown-item" href="#">밥그릇</a>
-                          <a class="dropdown-item" href="#">국그릇</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">기타</a>
-                        </div>
-                      </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                        수입주방용품
-                      </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">프랑스</a>
-                        <a class="dropdown-item" href="#">독일</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">기타 해외상품</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">기타주방용품</a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="찾으시는 물품명" aria-label="Search">
-                    <button class="btn border-0 my-2 my-sm-0 position-relative" style="left:-60px" type="submit">|&nbsp;&nbsp;<i class="bi bi-search"></i></button>
-                  </form>
+          <h3 class="main-title">건강한 밥상은</h3>
+          <p class="sub-title">플레이팅으로부터, 이제 바꿔보세요!</p>
+          <!-- bootstrap javascript behavior taps Pill  -->
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active rounded-pill" id="pills-home-tab" data-toggle="pill" data-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">그릇</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-pill" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">홈세트</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-pill" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">냄비</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <!-- 그릇 목록 deck 시작-->
+              <div class="card-deck">
+                <div class="card">
+                  <img src="images/plate_1.png" class="card-img-top" alt="육각그릇세트">
+                  <div class="card-body">
+                    <h5 class="card-title">라움 4인 홈세트 26P+유리컵 4P 증정</h5>
+                    <p class="card-text">89,500원</p>
+                  </div>
                 </div>
-              </nav>
-        </div>
-    </header>
+                <div class="card">
+                  <img src="images/plate_2.png" class="card-img-top" alt="흰색접시세트">
+                  <div class="card-body">
+                    <h5 class="card-title">(쿠폰증정)뉴본차이나 화이트 4인 세트 24P</h5>
+                    <p class="card-text">39,400원</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/plate_3.png" class="card-img-top" alt="꾸불꾸불그릇">
+                  <div class="card-body">
+                    <h5 class="card-title">꽃잎을 닮은 화이트 목화 4인 식기세트 25P</h5>
+                    <p class="card-text">59,500원</p>
+                  </div>
+                </div>
+              </div>
+              <!-- deck끝 -->
+              
 
-    <div class="container-fluid px-0">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="images/hero1.jpg" class="d-block w-100" alt="출석체크하고 스푼받자!">
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <!-- 홈세트 목록 deck 시작-->
+            <div class="card-deck">
+              <div class="card">
+                <img src="images/homeset_1.png" class="card-img-top" alt="삼각뿔 그릇">
+                <div class="card-body">
+                  <h5 class="card-title">삼각뿔 그릇</h5>
+                  <p class="card-text">69,900원</p>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="images/hero2.jpg" class="d-block w-100" alt="스테이크">
+              <div class="card">
+                <img src="images/homeset_2.png" class="card-img-top" alt="블랙 홈세트">
+                <div class="card-body">
+                  <h5 class="card-title">블랙 홈세트</h5>
+                    <p class="card-text">119,000원</p>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="images/hero3.jpg" class="d-block w-100" alt="파스타스타">
+              <div class="card">
+                <img src="images/homeset_3.png" class="card-img-top" alt="친환경 그릇">
+                <div class="card-body">
+                  <h5 class="card-title">친환경 그릇</h5>
+                    <p class="card-text">65,900원</p>
+                </div>
               </div>
             </div>
+            <!-- deck끝 -->
           </div>
-    </div>
-    <section>
-        <article>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <!-- 냄비 목록 deck 시작-->
+            <div class="card-deck">
+              <div class="card">
+                <img src="images/pot_1.png" class="card-img-top" alt="블랙 라이트 뚜껑 냄비세트">
+                <div class="card-body">
+                  <h5 class="card-title">블랙 라이트 뚜껑 냄비세트</h5>
+                    <p class="card-text">123,400원</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/pot_2.png" class="card-img-top" alt="동색 주방 홈세트">
+                <div class="card-body">
+                  <h5 class="card-title">동색 주방 홈세트</h5>
+                    <p class="card-text">199,900원</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/pot_3.png" class="card-img-top" alt="스텐 냄비세트">
+                <div class="card-body">
+                  <h5 class="card-title">스텐 냄비세트</h5>
+                    <p class="card-text">124,500원</p>
+                </div>
+              </div>
+            </div>
+            <!-- deck끝 -->
+          </div>
+          </div>
 
 
-        </article>
 
-    </section>
-
-
-    <aside></aside>
+        </div>
 
 
+      </article>
 
-    <footer></footer>
-    <!-- 부트스트랩 script -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
-    <!-- main.js 연결 -->
-    <script src="script/main.js"></script>
+  </section>
+
+
+  <aside></aside>
+
+
+
+  <footer></footer>
+  <!-- 부트스트랩 script -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- main.js 연결 -->
+  <script src="script/main.js"></script>
 </body>
 
 </html>
