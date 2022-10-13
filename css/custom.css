@@ -67,6 +67,9 @@
 .nav-pills{
     gap:1rem;
 }
+.card-event img{
+    width:100%;
+}
 
 aside{
     color:white;
